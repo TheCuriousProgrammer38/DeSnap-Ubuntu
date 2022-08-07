@@ -1,11 +1,18 @@
 # DeSnap-Ubuntu
+
 ## Remove Snaps From Ubuntu
----
+
 ```shell
 sudo rm -rf /var/cache/snapd/
 ```
 ```shell
 sudo apt autoremove --purge snapd gnome-software-plugin-snap
+```
+```shell
+rm -fr ~/snap
+```
+```shell
+sudo apt-mark hold snapd
 ```
 ---
 References : 
